@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link to font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Survey Form Certification Project</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for help me to get my certification</p>
+      <section id="form-container">
+        <form id="survey-form">
+          <label for="name" id="name-label">*Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email" id="email-label">*E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail..."
+            required
+          />
+          <label for="number" id="number-label">*Age:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter your age... (min. 16)"
+            min="16"
+            max="120"
+          />
+          <label for="you-know-me">Where you heard about me?</label>
+          <select name="you-know-me" id="dropdown">
+            <option value="" selected disabled>Select an option</option>
+            <option value="Instagram">Instagram</option>
+            <option value="TikTok">TikTok</option>
+            <option value="HackABoss">Hack A Boss</option>
+          </select>
+
+          <hr />
+
+          <h2 for="radio-h2">How do you rate this project?</h2>
+          <label for="five"
+            ><input
+              type="radio"
+              name="my-rate"
+              id="five"
+              value="five"
+              checked
+            />
+            5 out of 5</label
+          >
+          <label for="ten"
+            ><input type="radio" name="my-rate" id="ten" value="ten" /> 10 out
+            of 10</label
+          >
+          <label for="hundred"
+            ><input
+              type="radio"
+              name="my-rate"
+              id="hundred"
+              value="hundred"
+            />100 out of 100</label
+          >
+          <hr />
+          <h2>Wanna check some boxes?</h2>
+          <label
+            ><input type="checkbox" value="check-1" name="check-1" />Check this
+            one</label
+          >
+          <label
+            ><input type="checkbox" value="check-2" name="check-2" />Or try
+            this</label
+          >
+          <label
+            ><input type="checkbox" value="check-3" name="check-3" />What about
+            this one</label
+          >
+          <label
+            ><input type="checkbox" value="check-4" name="check-4" />Or
+            maybe...?</label
+          >
+
+          <hr />
+
+          <label id="textarea-label" for="interesting"
+            >Tell me something interesting...</label
+          >
+          <textarea
+            name="interesting"
+            id="interesting"
+            cols="30"
+            rows="5"
+            placeholder="Like blah blah blah..."
+          ></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        <p id="footer">*Required fields</p>
+      </section>
+    </main>
+  </body>
+</html>
